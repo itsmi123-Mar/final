@@ -1,0 +1,762 @@
+[gd_scene format=3 uid="uid://hk2pgceb12dd"]
+
+[ext_resource type="Texture2D" uid="uid://dq4yvkfjx1xvq" path="res://art/background/scoreboard_select_lvl.png" id="1_ki45o"]
+[ext_resource type="Texture2D" uid="uid://b22j6ofp4ttso" path="res://art/items/butterfly.png" id="2_i4akd"]
+[ext_resource type="Script" uid="uid://c8f1o3jfa6mwj" path="res://script/animated_sprite_2d.gd" id="3_t8opd"]
+[ext_resource type="FontFile" uid="uid://bbqyr7y7bxs3q" path="res://art/font/para(font)/ParaRegular.woff" id="4_t8opd"]
+[ext_resource type="Texture2D" uid="uid://c37qngxbowlx7" path="res://art/items/total star icon.png" id="5_mgxbj"]
+[ext_resource type="Texture2D" uid="uid://djagnujsj00cf" path="res://art/items/silver.png" id="5_t8opd"]
+[ext_resource type="Texture2D" uid="uid://dwctwd3urbj2n" path="res://art/button/back.png" id="6_lyg75"]
+[ext_resource type="Texture2D" uid="uid://c3yxq0istjoe6" path="res://art/items/bronze.png" id="6_mgxbj"]
+[ext_resource type="Texture2D" uid="uid://bntli85og2gde" path="res://art/button/home.png" id="7_5787l"]
+[ext_resource type="Texture2D" uid="uid://oxi1tgyc1ke4" path="res://art/items/gold.png" id="7_lyg75"]
+
+[ext_resource type="Script" path="res://script/scoreboard.gd" id="11_scoreboard_script"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_ogupo"]
+atlas = ExtResource("2_i4akd")
+region = Rect2(0, 0, 480, 864)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_leojw"]
+atlas = ExtResource("2_i4akd")
+region = Rect2(480, 0, 480, 864)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1vhwa"]
+atlas = ExtResource("2_i4akd")
+region = Rect2(960, 0, 480, 864)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oateb"]
+atlas = ExtResource("2_i4akd")
+region = Rect2(1440, 0, 480, 864)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hnvd5"]
+atlas = ExtResource("2_i4akd")
+region = Rect2(1920, 0, 480, 864)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i413s"]
+atlas = ExtResource("2_i4akd")
+region = Rect2(2400, 0, 480, 864)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_84xhk"]
+atlas = ExtResource("2_i4akd")
+region = Rect2(2880, 0, 480, 864)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_43kvp"]
+atlas = ExtResource("2_i4akd")
+region = Rect2(0, 864, 480, 864)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v0us6"]
+atlas = ExtResource("2_i4akd")
+region = Rect2(480, 864, 480, 864)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vguhl"]
+atlas = ExtResource("2_i4akd")
+region = Rect2(960, 864, 480, 864)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0jvt8"]
+atlas = ExtResource("2_i4akd")
+region = Rect2(1440, 864, 480, 864)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wc4sp"]
+atlas = ExtResource("2_i4akd")
+region = Rect2(1920, 864, 480, 864)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ywk02"]
+atlas = ExtResource("2_i4akd")
+region = Rect2(2400, 864, 480, 864)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m7ljr"]
+atlas = ExtResource("2_i4akd")
+region = Rect2(2880, 864, 480, 864)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tjhd1"]
+atlas = ExtResource("2_i4akd")
+region = Rect2(0, 1728, 480, 864)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eu7xs"]
+atlas = ExtResource("2_i4akd")
+region = Rect2(480, 1728, 480, 864)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0wfo7"]
+atlas = ExtResource("2_i4akd")
+region = Rect2(960, 1728, 480, 864)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2ij56"]
+atlas = ExtResource("2_i4akd")
+region = Rect2(1440, 1728, 480, 864)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7xmoy"]
+atlas = ExtResource("2_i4akd")
+region = Rect2(1920, 1728, 480, 864)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4ylqd"]
+atlas = ExtResource("2_i4akd")
+region = Rect2(2400, 1728, 480, 864)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h3e3r"]
+atlas = ExtResource("2_i4akd")
+region = Rect2(2880, 1728, 480, 864)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4gdcn"]
+atlas = ExtResource("2_i4akd")
+region = Rect2(0, 2592, 480, 864)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ghpbd"]
+atlas = ExtResource("2_i4akd")
+region = Rect2(480, 2592, 480, 864)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jdax7"]
+atlas = ExtResource("2_i4akd")
+region = Rect2(960, 2592, 480, 864)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8kvup"]
+atlas = ExtResource("2_i4akd")
+region = Rect2(1440, 2592, 480, 864)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xlesy"]
+atlas = ExtResource("2_i4akd")
+region = Rect2(1920, 2592, 480, 864)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o8rjf"]
+atlas = ExtResource("2_i4akd")
+region = Rect2(2400, 2592, 480, 864)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fw1ay"]
+atlas = ExtResource("2_i4akd")
+region = Rect2(2880, 2592, 480, 864)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y3wtp"]
+atlas = ExtResource("2_i4akd")
+region = Rect2(0, 3456, 480, 864)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e3bbk"]
+atlas = ExtResource("2_i4akd")
+region = Rect2(480, 3456, 480, 864)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hin6q"]
+atlas = ExtResource("2_i4akd")
+region = Rect2(960, 3456, 480, 864)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e8vkm"]
+atlas = ExtResource("2_i4akd")
+region = Rect2(1440, 3456, 480, 864)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sipdp"]
+atlas = ExtResource("2_i4akd")
+region = Rect2(1920, 3456, 480, 864)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bfj2k"]
+atlas = ExtResource("2_i4akd")
+region = Rect2(2400, 3456, 480, 864)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cnk0m"]
+atlas = ExtResource("2_i4akd")
+region = Rect2(2880, 3456, 480, 864)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k61un"]
+atlas = ExtResource("2_i4akd")
+region = Rect2(0, 4320, 480, 864)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y8ky4"]
+atlas = ExtResource("2_i4akd")
+region = Rect2(480, 4320, 480, 864)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ejdq5"]
+atlas = ExtResource("2_i4akd")
+region = Rect2(960, 4320, 480, 864)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bm7il"]
+atlas = ExtResource("2_i4akd")
+region = Rect2(1440, 4320, 480, 864)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ier41"]
+atlas = ExtResource("2_i4akd")
+region = Rect2(1920, 4320, 480, 864)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_12r5r"]
+atlas = ExtResource("2_i4akd")
+region = Rect2(2400, 4320, 480, 864)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4n3bh"]
+atlas = ExtResource("2_i4akd")
+region = Rect2(2880, 4320, 480, 864)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f85pa"]
+atlas = ExtResource("2_i4akd")
+region = Rect2(0, 5184, 480, 864)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6pwk5"]
+atlas = ExtResource("2_i4akd")
+region = Rect2(480, 5184, 480, 864)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uf1wu"]
+atlas = ExtResource("2_i4akd")
+region = Rect2(960, 5184, 480, 864)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nplb6"]
+atlas = ExtResource("2_i4akd")
+region = Rect2(1440, 5184, 480, 864)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hpt6g"]
+atlas = ExtResource("2_i4akd")
+region = Rect2(1920, 5184, 480, 864)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8xpgo"]
+atlas = ExtResource("2_i4akd")
+region = Rect2(2400, 5184, 480, 864)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8a1e1"]
+atlas = ExtResource("2_i4akd")
+region = Rect2(2880, 5184, 480, 864)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3trqy"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ogupo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_leojw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1vhwa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oateb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hnvd5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i413s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_84xhk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_43kvp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v0us6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vguhl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0jvt8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wc4sp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ywk02")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m7ljr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tjhd1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eu7xs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0wfo7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2ij56")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7xmoy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4ylqd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h3e3r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4gdcn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ghpbd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jdax7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8kvup")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xlesy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o8rjf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fw1ay")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y3wtp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e3bbk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hin6q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e8vkm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sipdp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bfj2k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cnk0m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k61un")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y8ky4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ejdq5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bm7il")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ier41")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_12r5r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4n3bh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f85pa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6pwk5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uf1wu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nplb6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hpt6g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8xpgo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8a1e1")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ytm8h"]
+radius = 30.265491
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pn6sb"]
+bg_color = Color(0.827451, 0.72156864, 0.9254902, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[sub_resource type="SystemFont" id="SystemFont_pn6sb"]
+subpixel_positioning = 0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_iaukc"]
+bg_color = Color(0.73333335, 0.11372549, 0.18039216, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[sub_resource type="SystemFont" id="SystemFont_4ob2m"]
+subpixel_positioning = 0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4psxk"]
+bg_color = Color(0.7176471, 1, 0.7647059, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o2qqr"]
+bg_color = Color(0.75686276, 1, 0.44705883, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5oy4b"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_je8uc"]
+bg_color = Color(0.3455436, 0.5910813, 1, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+
+[node name="scoreboard" type="Control" unique_id=931962164]
+script = ExtResource("11_scoreboard_script")
+modulate = Color(0.8792148, 0.8792148, 0.8792148, 1)
+layout_mode = 3
+anchors_preset = 15
+offset_right = 0.0
+offset_bottom = 0.0
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="background" type="TextureRect" parent="." unique_id=436301018]
+modulate = Color(0.8792148, 0.8792148, 0.8792148, 1)
+layout_mode = 0
+offset_right = 613.0
+offset_bottom = 699.0
+texture = ExtResource("1_ki45o")
+
+[node name="background2" type="TextureRect" parent="." unique_id=529441049]
+modulate = Color(0.8792148, 0.8792148, 0.8792148, 1)
+layout_mode = 0
+offset_left = -3.0
+offset_top = 277.0
+offset_right = 612.0
+offset_bottom = 1070.0
+texture = ExtResource("1_ki45o")
+flip_h = true
+
+[node name="butterfly" type="CharacterBody2D" parent="." unique_id=1951312354]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="butterfly" unique_id=97848538]
+position = Vector2(483, 121)
+scale = Vector2(0.24791665, 0.21759261)
+sprite_frames = SubResource("SpriteFrames_3trqy")
+animation = &"idle"
+script = ExtResource("3_t8opd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="butterfly" unique_id=573502170]
+position = Vector2(473, 119)
+shape = SubResource("CircleShape2D_ytm8h")
+
+[node name="title" type="Label" parent="." unique_id=1616553548]
+modulate = Color(0.8792148, 0.8792148, 0.8792148, 1)
+layout_mode = 0
+offset_left = 185.0
+offset_top = 89.0
+offset_right = 430.0
+offset_bottom = 138.0
+theme_override_fonts/font = ExtResource("4_t8opd")
+theme_override_font_sizes/font_size = 45
+text = "Score Board"
+
+[node name="score_summary" type="VBoxContainer" parent="." unique_id=803523590]
+modulate = Color(0.8792148, 0.8792148, 0.8792148, 1)
+layout_mode = 0
+offset_right = 21.0
+offset_bottom = 23.0
+
+[node name="profile_box" type="Panel" parent="." unique_id=535116960]
+texture_filter = 1
+texture_repeat = 1
+layout_mode = 0
+offset_left = 50.0
+offset_top = 163.0
+offset_right = 564.0
+offset_bottom = 382.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_pn6sb")
+
+[node name="name" type="Label" parent="profile_box" unique_id=1558096537]
+layout_mode = 0
+offset_left = 37.0
+offset_top = 31.0
+offset_right = 213.0
+offset_bottom = 70.0
+theme_override_colors/font_color = Color(0.011764706, 0.011764706, 0.011764706, 1)
+theme_override_fonts/font = ExtResource("4_t8opd")
+theme_override_font_sizes/font_size = 28
+text = "Geto Suguru"
+
+[node name="grade" type="Label" parent="profile_box" unique_id=1519135733]
+layout_mode = 0
+offset_left = 39.0
+offset_top = 64.0
+offset_right = 171.0
+offset_bottom = 95.0
+theme_override_colors/font_color = Color(0.011764706, 0.011764706, 0.011764706, 1)
+theme_override_fonts/font = SubResource("SystemFont_pn6sb")
+theme_override_font_sizes/font_size = 22
+text = "Grade 3"
+
+[node name="badge" type="TextureRect" parent="profile_box" unique_id=997925231]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="silver" type="TextureRect" parent="profile_box" unique_id=1759194770]
+texture_filter = 1
+texture_repeat = 1
+layout_mode = 0
+offset_left = 70.0
+offset_top = 98.0
+offset_right = 202.0
+offset_bottom = 203.0
+texture = ExtResource("5_t8opd")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="bronze" type="TextureRect" parent="profile_box" unique_id=1457164738]
+texture_filter = 1
+texture_repeat = 1
+layout_mode = 0
+offset_left = 64.0
+offset_top = 96.0
+offset_right = 203.0
+offset_bottom = 211.0
+texture = ExtResource("6_mgxbj")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="gold" type="TextureRect" parent="profile_box" unique_id=1547946042]
+texture_filter = 1
+texture_repeat = 1
+layout_mode = 0
+offset_left = 86.0
+offset_top = 98.0
+offset_right = 190.0
+offset_bottom = 220.0
+texture = ExtResource("7_lyg75")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="star_box" type="Panel" parent="." unique_id=1795826592]
+texture_filter = 1
+texture_repeat = 1
+layout_mode = 0
+offset_left = 59.0
+offset_top = 811.0
+offset_right = 287.0
+offset_bottom = 1030.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_iaukc")
+
+[node name="title" type="Label" parent="star_box" unique_id=1792799153]
+layout_mode = 0
+offset_left = 121.0
+offset_top = 47.0
+offset_right = 228.0
+offset_bottom = 86.0
+theme_override_fonts/font = SubResource("SystemFont_4ob2m")
+theme_override_font_sizes/font_size = 18
+text = "Total Stars"
+
+[node name="design" type="TextureRect" parent="star_box" unique_id=2130770639]
+texture_filter = 1
+texture_repeat = 1
+layout_mode = 0
+offset_left = -15.0
+offset_top = 24.0
+offset_right = 136.0
+offset_bottom = 174.0
+texture = ExtResource("5_mgxbj")
+expand_mode = 1
+
+[node name="total" type="Label" parent="star_box" unique_id=1701563692]
+layout_mode = 0
+offset_left = 133.0
+offset_top = 99.0
+offset_right = 200.0
+offset_bottom = 162.0
+theme_override_fonts/font = ExtResource("4_t8opd")
+theme_override_font_sizes/font_size = 58
+text = "65"
+
+[node name="lvl_completed_box3" type="Panel" parent="." unique_id=593804358]
+texture_filter = 1
+texture_repeat = 1
+layout_mode = 0
+offset_left = 316.0
+offset_top = 812.0
+offset_right = 544.0
+offset_bottom = 1031.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_4psxk")
+
+[node name="title" type="Label" parent="lvl_completed_box3" unique_id=930652869]
+layout_mode = 0
+offset_left = 49.0
+offset_top = 48.0
+offset_right = 186.0
+offset_bottom = 71.0
+theme_override_colors/font_color = Color(0.011764706, 0.011764706, 0.011764706, 1)
+text = "Levels Completed"
+
+[node name="Label" type="Label" parent="lvl_completed_box3" unique_id=1772729450]
+layout_mode = 0
+offset_left = 45.0
+offset_top = 87.0
+offset_right = 186.0
+offset_bottom = 150.0
+theme_override_colors/font_color = Color(0.011764706, 0.011764706, 0.011764706, 1)
+theme_override_fonts/font = ExtResource("4_t8opd")
+theme_override_font_sizes/font_size = 58
+text = "10/10"
+
+[node name="overall" type="Panel" parent="." unique_id=1059729628]
+texture_filter = 1
+texture_repeat = 1
+layout_mode = 0
+offset_left = 341.0
+offset_top = 185.0
+offset_right = 545.0
+offset_bottom = 364.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_o2qqr")
+
+[node name="title" type="Label" parent="overall" unique_id=944243167]
+layout_mode = 0
+offset_left = 49.0
+offset_top = 19.0
+offset_right = 165.0
+offset_bottom = 45.0
+theme_override_colors/font_color = Color(0.011764706, 0.011764706, 0.011764706, 1)
+theme_override_font_sizes/font_size = 18
+text = "Overall Score"
+
+[node name="score" type="Label" parent="overall" unique_id=1860578423]
+layout_mode = 0
+offset_left = 57.0
+offset_top = 69.0
+offset_right = 157.0
+offset_bottom = 149.0
+theme_override_colors/font_color = Color(0.011764706, 0.011764706, 0.011764706, 1)
+theme_override_fonts/font = ExtResource("4_t8opd")
+theme_override_font_sizes/font_size = 75
+text = "96"
+
+[node name="progress_box" type="Panel" parent="." unique_id=629772949]
+texture_filter = 1
+texture_repeat = 1
+layout_mode = 0
+offset_left = 49.0
+offset_top = 405.0
+offset_right = 563.0
+offset_bottom = 793.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_5oy4b")
+
+[node name="blue_part" type="Panel" parent="progress_box" unique_id=345217986]
+texture_filter = 1
+texture_repeat = 1
+layout_mode = 0
+offset_right = 514.0
+offset_bottom = 47.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_je8uc")
+
+[node name="header" type="GridContainer" parent="progress_box" unique_id=1771074361]
+layout_mode = 0
+offset_left = 28.0
+offset_top = 16.0
+offset_right = 518.0
+offset_bottom = 56.0
+theme_override_constants/h_separation = 8
+theme_override_constants/v_separation = 7
+columns = 4
+
+[node name="level" type="Label" parent="progress_box/header" unique_id=1928507870]
+layout_mode = 2
+custom_minimum_size = Vector2(100, 28)
+horizontal_alignment = 0
+vertical_alignment = 1
+theme_override_font_sizes/font_size = 20
+text = "Level"
+
+[node name="score" type="Label" parent="progress_box/header" unique_id=788729341]
+layout_mode = 2
+custom_minimum_size = Vector2(80, 28)
+horizontal_alignment = 1
+vertical_alignment = 1
+theme_override_font_sizes/font_size = 20
+text = "Score"
+
+[node name="stars" type="Label" parent="progress_box/header" unique_id=1466013263]
+layout_mode = 2
+custom_minimum_size = Vector2(70, 28)
+horizontal_alignment = 1
+vertical_alignment = 1
+theme_override_font_sizes/font_size = 20
+text = "Star"
+
+[node name="date" type="Label" parent="progress_box/header" unique_id=1100841196]
+layout_mode = 2
+custom_minimum_size = Vector2(130, 28)
+horizontal_alignment = 1
+vertical_alignment = 1
+theme_override_font_sizes/font_size = 20
+text = "Date"
+
+[node name="lecontentvel" type="GridContainer" parent="progress_box" unique_id=327691191]
+layout_mode = 0
+offset_left = 28.0
+offset_top = 50.0
+offset_right = 486.0
+offset_bottom = 82.0
+theme_override_constants/h_separation = 8
+theme_override_constants/v_separation = 7
+columns = 4
+
+[node name="n" type="Label" parent="progress_box/lecontentvel" unique_id=799200630]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.011764706, 0.011764706, 0.011764706, 1)
+theme_override_font_sizes/font_size = 20
+text = "1"
+
+[node name="n2" type="Label" parent="progress_box/lecontentvel" unique_id=1678966962]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.011764706, 0.011764706, 0.011764706, 1)
+theme_override_font_sizes/font_size = 20
+text = "10"
+
+[node name="n3" type="Label" parent="progress_box/lecontentvel" unique_id=1520159571]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.011764706, 0.011764706, 0.011764706, 1)
+theme_override_font_sizes/font_size = 20
+text = "3"
+
+[node name="n4" type="Label" parent="progress_box/lecontentvel" unique_id=1889336314]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.011764706, 0.011764706, 0.011764706, 1)
+theme_override_font_sizes/font_size = 20
+text = "06-24-2026"
+
+[node name="back" type="TextureButton" parent="." unique_id=179309667]
+layout_mode = 0
+offset_left = 17.0
+offset_top = 7.0
+offset_right = 107.0
+offset_bottom = 124.0
+texture_normal = ExtResource("6_lyg75")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="home" type="TextureButton" parent="." unique_id=360342427]
+layout_mode = 0
+offset_left = 497.0
+offset_top = 36.0
+offset_right = 585.0
+offset_bottom = 105.0
+texture_normal = ExtResource("7_5787l")
+texture_pressed = ExtResource("7_5787l")
+ignore_texture_size = true
+stretch_mode = 6
