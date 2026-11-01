@@ -1,0 +1,142 @@
+[gd_scene format=3 uid="uid://bdt8j8ab24j1p"]
+
+[ext_resource type="Texture2D" uid="uid://btch6fnwkrwck" path="res://art/player/m_archer/m_archer-spritesheet.png" id="1_mtjb2"]
+[ext_resource type="Script" uid="uid://c8f1o3jfa6mwj" path="res://script/animated_sprite_2d.gd" id="2_yhnl7"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xrunv"]
+atlas = ExtResource("1_mtjb2")
+region = Rect2(0, 0, 480, 864)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1xuve"]
+atlas = ExtResource("1_mtjb2")
+region = Rect2(480, 0, 480, 864)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p746r"]
+atlas = ExtResource("1_mtjb2")
+region = Rect2(960, 0, 480, 864)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2a3qd"]
+atlas = ExtResource("1_mtjb2")
+region = Rect2(1440, 0, 480, 864)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vjm6l"]
+atlas = ExtResource("1_mtjb2")
+region = Rect2(0, 864, 480, 864)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ryxd8"]
+atlas = ExtResource("1_mtjb2")
+region = Rect2(480, 864, 480, 864)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iigio"]
+atlas = ExtResource("1_mtjb2")
+region = Rect2(960, 864, 480, 864)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_txy6n"]
+atlas = ExtResource("1_mtjb2")
+region = Rect2(1440, 864, 480, 864)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h5nvo"]
+atlas = ExtResource("1_mtjb2")
+region = Rect2(0, 1728, 480, 864)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fybkg"]
+atlas = ExtResource("1_mtjb2")
+region = Rect2(480, 1728, 480, 864)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3rw22"]
+atlas = ExtResource("1_mtjb2")
+region = Rect2(960, 1728, 480, 864)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3hvit"]
+atlas = ExtResource("1_mtjb2")
+region = Rect2(1440, 1728, 480, 864)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_enorh"]
+atlas = ExtResource("1_mtjb2")
+region = Rect2(0, 2592, 480, 864)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ok0pn"]
+atlas = ExtResource("1_mtjb2")
+region = Rect2(480, 2592, 480, 864)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jh4ie"]
+atlas = ExtResource("1_mtjb2")
+region = Rect2(960, 2592, 480, 864)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_al7v2"]
+atlas = ExtResource("1_mtjb2")
+region = Rect2(1440, 2592, 480, 864)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_u5rm8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xrunv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1xuve")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p746r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2a3qd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vjm6l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ryxd8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iigio")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_txy6n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h5nvo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fybkg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3rw22")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3hvit")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_enorh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ok0pn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jh4ie")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_al7v2")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_fslfr"]
+radius = 29.0
+height = 58.0
+
+[node name="m_archer" type="CharacterBody2D" unique_id=150782882]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=51774142]
+position = Vector2(-6.25, -12.1875)
+scale = Vector2(0.44062504, 0.37225118)
+sprite_frames = SubResource("SpriteFrames_u5rm8")
+animation = &"idle"
+script = ExtResource("2_yhnl7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=743009969]
+modulate = Color(18.892, 18.892, 18.892, 1)
+position = Vector2(-2.25, 80.8125)
+shape = SubResource("CapsuleShape2D_fslfr")

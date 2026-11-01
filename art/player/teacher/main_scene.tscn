@@ -1,0 +1,149 @@
+[gd_scene format=3 uid="uid://b2kccphbbdbah"]
+
+[ext_resource type="Texture2D" uid="uid://cjy3dqa1jtqw" path="res://teacher/items/2.png" id="1_vge2k"]
+[ext_resource type="Texture2D" uid="uid://y7kxoi1lq6xg" path="res://art/button/logout (2).png" id="2_63db0"]
+
+[sub_resource type="FontVariation" id="FontVariation_quvdj"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4ob2m"]
+bg_color = Color(1, 0.7986636, 0.88971347, 1)
+corner_radius_top_left = 34
+corner_radius_top_right = 34
+corner_radius_bottom_right = 34
+corner_radius_bottom_left = 34
+corner_detail = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5oy4b"]
+bg_color = Color(0.9787944, 0.86877024, 0.35796595, 1)
+corner_radius_top_left = 34
+corner_radius_top_right = 34
+corner_radius_bottom_right = 34
+corner_radius_bottom_left = 34
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_quvdj"]
+bg_color = Color(0.8372121, 0.9213378, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pn6sb"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[node name="MainScene" type="Control" unique_id=628048527]
+layout_mode = 3
+anchor_right = 1.0229508
+anchor_bottom = 0.99622643
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(519, 256)
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=119970963]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 2.0
+offset_right = 2078.0
+offset_bottom = 1395.0
+texture = ExtResource("1_vge2k")
+expand_mode = 1
+
+[node name="title" type="Label" parent="." unique_id=1063544572]
+layout_mode = 0
+offset_left = 204.0
+offset_top = 55.0
+offset_right = 478.0
+offset_bottom = 102.0
+theme_override_colors/font_color = Color(0.011764706, 0.011764706, 0.011764706, 1)
+theme_override_constants/line_spacing = 20
+theme_override_fonts/font = SubResource("FontVariation_quvdj")
+theme_override_font_sizes/font_size = 34
+text = "WELCOME BACK!"
+
+[node name="total_pupil" type="Label" parent="." unique_id=701767558]
+layout_mode = 0
+offset_left = 280.0
+offset_top = 304.0
+offset_right = 369.0
+offset_bottom = 411.0
+theme_override_colors/font_color = Color(0.011764706, 0.011764706, 0.011764706, 1)
+theme_override_constants/line_spacing = 20
+theme_override_fonts/font = SubResource("FontVariation_quvdj")
+theme_override_font_sizes/font_size = 78
+text = "11"
+
+[node name="Panel" type="Panel" parent="." unique_id=1155733838]
+layout_mode = 0
+offset_left = 240.0
+offset_top = 414.0
+offset_right = 413.0
+offset_bottom = 448.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_4ob2m")
+
+[node name="Grade n" type="Label" parent="Panel" unique_id=380701864]
+layout_mode = 0
+offset_left = 41.0
+offset_top = -1.0
+offset_right = 132.0
+offset_bottom = 30.0
+theme_override_colors/font_color = Color(0.4509804, 0.4509804, 0.4509804, 1)
+theme_override_font_sizes/font_size = 22
+text = "Grade: n"
+
+[node name="Panel2" type="Panel" parent="." unique_id=687307243]
+layout_mode = 0
+offset_left = 1552.0
+offset_top = 73.0
+offset_right = 1772.0
+offset_bottom = 120.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_5oy4b")
+
+[node name="S_Y_" type="Label" parent="Panel2" unique_id=451945081]
+layout_mode = 0
+offset_left = 35.0
+offset_top = 8.0
+offset_right = 186.0
+offset_bottom = 41.0
+theme_override_colors/font_color = Color(0.4509804, 0.4509804, 0.4509804, 1)
+theme_override_font_sizes/font_size = 22
+text = "S.Y. 2026-2027"
+
+[node name="Panel3" type="Panel" parent="." unique_id=1880605807]
+layout_mode = 0
+offset_left = 208.0
+offset_top = 813.0
+offset_right = 1867.0
+offset_bottom = 942.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_quvdj")
+
+[node name="students" type="GridContainer" parent="Panel3" unique_id=1948685528]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 54.0
+offset_top = 8.0
+offset_right = -63.0
+offset_bottom = 59.5
+theme_override_constants/h_separation = 1320
+columns = 2
+
+[node name="name" type="Label" parent="Panel3/students" unique_id=471965370]
+custom_minimum_size = Vector2(34, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.011764706, 0.011764706, 0.011764706, 1)
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_pn6sb")
+text = "Lucy"
+
+[node name="score" type="Label" parent="Panel3/students" unique_id=1647366779]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.012617188, 0.012617188, 0.012617188, 1)
+theme_override_font_sizes/font_size = 85
+text = "67"
+
+[node name="TextureButton" type="TextureButton" parent="." unique_id=2046034112]
+layout_mode = 0
+offset_left = 1775.0
+offset_top = -15.0
+offset_right = 1947.0
+offset_bottom = 217.0
+texture_normal = ExtResource("2_63db0")
+ignore_texture_size = true
+stretch_mode = 5

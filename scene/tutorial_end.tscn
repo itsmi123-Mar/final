@@ -1,0 +1,92 @@
+[gd_scene format=3 uid="uid://bocls55n7bc1y"]
+[ext_resource type="Script" path="res://script/tutorial_end.gd" id="tutorial_end_script"]
+
+[ext_resource type="Texture2D" uid="uid://4apq1fbfsbfr" path="res://art/background/tutorial_end.png" id="1_vctl1"]
+[ext_resource type="Texture2D" uid="uid://d1fpwe0m8d5ub" path="res://art/items/circle_bs.png" id="2_h0iwj"]
+[ext_resource type="PackedScene" uid="uid://c5gtbrhotftid" path="res://scene/char/m_wizard.tscn" id="3_kvsy5"]
+[ext_resource type="PackedScene" uid="uid://bdt8j8ab24j1p" path="res://scene/char/m_archer.tscn" id="4_xf0um"]
+[ext_resource type="PackedScene" uid="uid://dft6mv7ul72u0" path="res://scene/char/f_wizard.tscn" id="5_1kc5k"]
+[ext_resource type="PackedScene" uid="uid://c2bndqjpoymog" path="res://scene/char/f_archer.tscn" id="6_0548s"]
+[ext_resource type="PackedScene" uid="uid://dcr6lsgx543m3" path="res://scene/char/princess.tscn" id="7_soaq0"]
+[ext_resource type="PackedScene" uid="uid://cxmf0vn2hfwvq" path="res://scene/char/warrior.tscn" id="8_8iw1m"]
+
+[sub_resource type="SystemFont" id="SystemFont_pn6sb"]
+
+[node name="tutorial_end" type="Control" unique_id=1773382710]
+script = ExtResource("tutorial_end_script")
+layout_mode = 3
+anchors_preset = 15
+offset_right = 0.0
+offset_bottom = 0.0
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="background" type="TextureRect" parent="." unique_id=1379892268]
+layout_mode = 0
+offset_left = -1.0
+offset_top = 1.0
+offset_right = 612.0
+offset_bottom = 1065.0
+texture = ExtResource("1_vctl1")
+expand_mode = 1
+
+[node name="bubblespeach" type="TextureRect" parent="." unique_id=906431564]
+layout_mode = 0
+offset_left = -32.0
+offset_top = 73.0
+offset_right = 455.0
+offset_bottom = 884.0
+texture = ExtResource("2_h0iwj")
+expand_mode = 1
+
+[node name="instructions" type="Label" parent="." unique_id=697826785]
+layout_mode = 0
+offset_left = 65.0
+offset_top = 405.0
+offset_right = 390.0
+offset_bottom = 525.0
+theme_override_colors/font_color = Color(0.011764706, 0.011764706, 0.011764706, 1)
+theme_override_fonts/font = SubResource("SystemFont_pn6sb")
+theme_override_font_sizes/font_size = 18
+autowrap_mode = 3
+text = "Ready for the adventure ahead? Your hero is counting on you. Let’s begin the quest and show these monsters your courage!"
+
+[node name="Node2D" type="Node2D" parent="." unique_id=1586057199]
+
+[node name="m_wizard" parent="Node2D" unique_id=854120476 instance=ExtResource("3_kvsy5")]
+visible = false
+position = Vector2(424, 891)
+scale = Vector2(2.0168822, 2.1993072)
+
+[node name="m_archer" parent="Node2D" unique_id=150782882 instance=ExtResource("4_xf0um")]
+visible = false
+position = Vector2(433.00003, 898)
+scale = Vector2(2.0935292, 2.450003)
+
+[node name="f_wizard" parent="Node2D" unique_id=2014071197 instance=ExtResource("5_1kc5k")]
+visible = false
+position = Vector2(413, 921.00006)
+scale = Vector2(2.173528, 2.1093743)
+
+[node name="f_archer" parent="Node2D" unique_id=508012325 instance=ExtResource("6_0548s")]
+visible = false
+position = Vector2(425, 912)
+scale = Vector2(2.1999996, 2.32)
+
+[node name="princess" parent="Node2D" unique_id=1230171912 instance=ExtResource("7_soaq0")]
+visible = false
+position = Vector2(419, 956.99994)
+scale = Vector2(2.3982208, 2.3792481)
+
+[node name="warrior" parent="Node2D" unique_id=1235258956 instance=ExtResource("8_8iw1m")]
+position = Vector2(428.00003, 937)
+scale = Vector2(2.2633975, 2.28)
+
+[node name="continue_button" type="Button" parent="."]
+offset_left = 195.0
+offset_top = 850.0
+offset_right = 415.0
+offset_bottom = 915.0
+text = "Continue"
