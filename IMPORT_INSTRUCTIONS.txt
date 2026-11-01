@@ -1,6 +1,0 @@
-MATHQUEST CLASSROOM — REPAIRED PACKAGE
-
-This archive is packaged with project.godot at the ZIP root for Godot ZIP import.
-In Godot Project Manager, choose Import, select this ZIP, choose an empty destination folder, then Import & Edit.
-If using manual extraction, extract the entire archive into one folder and open the project.godot file in that folder.
-Do not extract only the art folder or move project files individually.
