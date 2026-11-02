@@ -6,3 +6,7 @@ res://script/login.gd
 res://art/player/teacher/gen.tscn
 res://art/player/teacher/monitor.tscn
 res://teacher_monitor.gd
+res://script/select_level.gd
+res://level_complete.gd
+res://scene/lvl_start.tscn
+res://script/tutorial_navigation.gd

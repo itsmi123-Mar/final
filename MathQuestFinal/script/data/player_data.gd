@@ -500,6 +500,12 @@ func has_level_star(level_number: int) -> bool:
 	return int(result.get("stars", 0)) >= 1
 
 
+# ==========================================
+# LEVEL 1 UNLOCK REQUIREMENT
+# Pre-test must be completed.
+# Score requirement: NONE (0/20 to 20/20).
+# ==========================================
+
 func has_pretest_passed() -> bool:
 
 	var progress: Dictionary = get_current_progress()
@@ -508,7 +514,7 @@ func has_pretest_passed() -> bool:
 
 	var pretest: Dictionary = results.get("pretest", {})
 
-	return int(pretest.get("stars", 0)) >= 1
+	return not pretest.is_empty()
 
 
 # ==========================================

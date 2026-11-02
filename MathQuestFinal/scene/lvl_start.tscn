@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://bs1p4bqxlpwsx"]
-[ext_resource type="Script" path="res://level_start.gd" id="level_start_script"]
 
 [ext_resource type="Texture2D" uid="uid://c7ixifgdrfxo1" path="res://art/background/start level.png" id="1_27wg6"]
 [ext_resource type="Texture2D" uid="uid://cl4hcwmjwkwps" path="res://art/items/scroll.png" id="2_lverl"]
 [ext_resource type="FontFile" uid="uid://bbqyr7y7bxs3q" path="res://art/font/para(font)/ParaRegular.woff" id="3_sx3xm"]
 [ext_resource type="Texture2D" uid="uid://bx3qee1f67hpk" path="res://art/items/hollow star.png" id="4_lprpb"]
+[ext_resource type="Script" uid="uid://bdek4dcnkx46m" path="res://level_start.gd" id="level_start_script"]
 
 [sub_resource type="SystemFont" id="SystemFont_4ob2m"]
 
@@ -36,11 +36,11 @@ corner_radius_bottom_right = 50
 corner_radius_bottom_left = 50
 
 [node name="lvl_start" type="Control" unique_id=73519258]
-script = ExtResource("level_start_script")
 layout_mode = 3
 anchors_preset = 0
 offset_right = 597.0
 offset_bottom = 1059.0
+script = ExtResource("level_start_script")
 
 [node name="background" type="TextureRect" parent="." unique_id=1581296550]
 layout_mode = 0
