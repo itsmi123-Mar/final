@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://bc27ywoq0u4cu"]
+
+[ext_resource type="Texture2D" uid="uid://c7ixifgdrfxo1" path="res://art/background/start level.png" id="1_y3xbc"]
+[ext_resource type="Texture2D" uid="uid://oxi1tgyc1ke4" path="res://art/items/gold.png" id="2_vl5fl"]
+[ext_resource type="Texture2D" uid="uid://djagnujsj00cf" path="res://art/items/silver.png" id="3_kbb8v"]
+[ext_resource type="Texture2D" uid="uid://c3yxq0istjoe6" path="res://art/items/bronze.png" id="4_htcbj"]
+
+[node name="Control" type="Control" unique_id=43978788]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="badge" type="TextureRect" parent="." unique_id=1808210865]
+layout_mode = 0
+offset_right = 609.0
+offset_bottom = 1060.0
+texture = ExtResource("1_y3xbc")
+expand_mode = 1
+
+[node name="gold" type="Sprite2D" parent="." unique_id=684948044]
+position = Vector2(288, 537.25)
+scale = Vector2(2.6339285, 2.7781694)
+texture = ExtResource("2_vl5fl")
+
+[node name="silver" type="Sprite2D" parent="." unique_id=1000798626]
+position = Vector2(281, 508.3125)
+scale = Vector2(2.041096, 2.1128786)
+texture = ExtResource("3_kbb8v")
+
+[node name="bronze" type="Sprite2D" parent="." unique_id=495047908]
+position = Vector2(274, 518)
+scale = Vector2(2.074074, 2.1027775)
+texture = ExtResource("4_htcbj")

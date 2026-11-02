@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://dxs6nh7nlr1xn"]
+
+[ext_resource type="Texture2D" uid="uid://bknru7tste5fi" path="res://teacher/items/j.png" id="1_xifvw"]
+[ext_resource type="Texture2D" uid="uid://dvufukkxxc117" path="res://teacher/items/image-removebg-preview (14).png" id="2_1wmi5"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pn6sb"]
+bg_color = Color(8.5432083e-07, 0.4074868, 0.22153294, 1)
+corner_radius_top_left = 67
+corner_radius_top_right = 67
+corner_radius_bottom_right = 67
+corner_radius_bottom_left = 67
+corner_detail = 20
+
+[node name="Control" type="Control" unique_id=796153981]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="bg" type="TextureRect" parent="." unique_id=863462179]
+layout_mode = 0
+offset_top = -9.0
+offset_right = 2000.0
+offset_bottom = 1405.0
+texture = ExtResource("1_xifvw")
+
+[node name="back" type="TextureButton" parent="." unique_id=194013849]
+layout_mode = 0
+offset_left = 1391.0
+offset_top = 341.0
+offset_right = 1717.0
+offset_bottom = 537.0
+texture_normal = ExtResource("2_1wmi5")
+stretch_mode = 5
+
+[node name="Button" type="Button" parent="." unique_id=1569625738]
+layout_mode = 0
+offset_left = 849.0
+offset_top = 919.0
+offset_right = 1170.0
+offset_bottom = 1009.0
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_pn6sb")
+text = "Download"

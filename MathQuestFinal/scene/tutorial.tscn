@@ -1,0 +1,318 @@
+[gd_scene format=3 uid="uid://dnyjwjins7bpi"]
+[ext_resource type="Script" path="res://script/tutorial_navigation.gd" id="tutorial_navigation"]
+
+[ext_resource type="Texture2D" uid="uid://dqgunir2s32ug" path="res://art/background/tutorial.png" id="1_8jxoh"]
+[ext_resource type="Texture2D" uid="uid://d1fpwe0m8d5ub" path="res://art/items/circle_bs.png" id="2_nvmt1"]
+[ext_resource type="Texture2D" uid="uid://bf0b1g5wj7cxw" path="res://art/items/candle.png" id="3_won01"]
+[ext_resource type="Script" uid="uid://c8f1o3jfa6mwj" path="res://script/animated_sprite_2d.gd" id="4_mqdaa"]
+[ext_resource type="PackedScene" uid="uid://c5gtbrhotftid" path="res://scene/char/m_wizard.tscn" id="5_mo30s"]
+[ext_resource type="PackedScene" uid="uid://bdt8j8ab24j1p" path="res://scene/char/m_archer.tscn" id="6_6axd3"]
+[ext_resource type="PackedScene" uid="uid://dft6mv7ul72u0" path="res://scene/char/f_wizard.tscn" id="7_qi44v"]
+[ext_resource type="PackedScene" uid="uid://c2bndqjpoymog" path="res://scene/char/f_archer.tscn" id="8_xftar"]
+[ext_resource type="PackedScene" uid="uid://dcr6lsgx543m3" path="res://scene/char/princess.tscn" id="9_6iio1"]
+[ext_resource type="PackedScene" uid="uid://cxmf0vn2hfwvq" path="res://scene/char/warrior.tscn" id="10_l02f5"]
+
+[sub_resource type="SystemFont" id="SystemFont_55kyr"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tpavf"]
+atlas = ExtResource("3_won01")
+region = Rect2(0, 0, 640, 640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8ookx"]
+atlas = ExtResource("3_won01")
+region = Rect2(640, 0, 640, 640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8k3gn"]
+atlas = ExtResource("3_won01")
+region = Rect2(1280, 0, 640, 640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3vllm"]
+atlas = ExtResource("3_won01")
+region = Rect2(1920, 0, 640, 640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d7qb3"]
+atlas = ExtResource("3_won01")
+region = Rect2(2560, 0, 640, 640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nxkq0"]
+atlas = ExtResource("3_won01")
+region = Rect2(0, 640, 640, 640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0otvu"]
+atlas = ExtResource("3_won01")
+region = Rect2(640, 640, 640, 640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kp7dt"]
+atlas = ExtResource("3_won01")
+region = Rect2(1280, 640, 640, 640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_khs5e"]
+atlas = ExtResource("3_won01")
+region = Rect2(1920, 640, 640, 640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t2l00"]
+atlas = ExtResource("3_won01")
+region = Rect2(2560, 640, 640, 640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_be11y"]
+atlas = ExtResource("3_won01")
+region = Rect2(0, 1280, 640, 640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6ojb7"]
+atlas = ExtResource("3_won01")
+region = Rect2(640, 1280, 640, 640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3dpq0"]
+atlas = ExtResource("3_won01")
+region = Rect2(1280, 1280, 640, 640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y1gea"]
+atlas = ExtResource("3_won01")
+region = Rect2(1920, 1280, 640, 640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sugc3"]
+atlas = ExtResource("3_won01")
+region = Rect2(2560, 1280, 640, 640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fc2l6"]
+atlas = ExtResource("3_won01")
+region = Rect2(0, 1920, 640, 640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d7y8n"]
+atlas = ExtResource("3_won01")
+region = Rect2(640, 1920, 640, 640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ohin1"]
+atlas = ExtResource("3_won01")
+region = Rect2(1280, 1920, 640, 640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ndnyj"]
+atlas = ExtResource("3_won01")
+region = Rect2(1920, 1920, 640, 640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1ay1t"]
+atlas = ExtResource("3_won01")
+region = Rect2(2560, 1920, 640, 640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tn5ls"]
+atlas = ExtResource("3_won01")
+region = Rect2(0, 2560, 640, 640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oo33f"]
+atlas = ExtResource("3_won01")
+region = Rect2(640, 2560, 640, 640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v7ry8"]
+atlas = ExtResource("3_won01")
+region = Rect2(1280, 2560, 640, 640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jp2mj"]
+atlas = ExtResource("3_won01")
+region = Rect2(1920, 2560, 640, 640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jvts6"]
+atlas = ExtResource("3_won01")
+region = Rect2(2560, 2560, 640, 640)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mo30s"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tpavf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8ookx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8k3gn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3vllm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d7qb3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nxkq0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0otvu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kp7dt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_khs5e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t2l00")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_be11y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6ojb7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3dpq0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y1gea")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sugc3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fc2l6")
+}, {
+"duration": 4.0,
+"texture": SubResource("AtlasTexture_d7y8n")
+}, {
+"duration": 4.0,
+"texture": SubResource("AtlasTexture_ohin1")
+}, {
+"duration": 3.7,
+"texture": SubResource("AtlasTexture_ndnyj")
+}, {
+"duration": 2.0,
+"texture": SubResource("AtlasTexture_1ay1t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tn5ls")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oo33f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v7ry8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jp2mj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jvts6")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_6axd3"]
+radius = 17.0
+height = 84.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8ehqn"]
+bg_color = Color(0.82016593, 0, 0.19888386, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 6
+border_color = Color(0.0076186024, 0.0076186024, 0.0076186024, 1)
+border_blend = true
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[node name="tutorial" type="Control" unique_id=1810795347]
+script = ExtResource("tutorial_navigation")
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="background" type="TextureRect" parent="." unique_id=1382098364]
+layout_mode = 0
+offset_right = 615.0
+offset_bottom = 1065.0
+texture = ExtResource("1_8jxoh")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="bubble_speech" type="TextureRect" parent="." unique_id=1887413931]
+layout_mode = 0
+offset_left = -23.0
+offset_top = 78.0
+offset_right = 446.0
+offset_bottom = 883.0
+texture = ExtResource("2_nvmt1")
+expand_mode = 1
+
+[node name="instructions" type="Label" parent="bubble_speech" unique_id=1051195385]
+layout_mode = 0
+offset_left = 90.0
+offset_top = 330.0
+offset_right = 400.0
+offset_bottom = 455.0
+theme_override_colors/font_color = Color(0.011764706, 0.011764706, 0.011764706, 1)
+theme_override_fonts/font = SubResource("SystemFont_55kyr")
+theme_override_font_sizes/font_size = 18
+autowrap_mode = 3
+text = "Welcome, adventurer! Answer math questions to help your hero defeat each level’s monster. Correct answers let your hero attack. Wrong answers let the monster strike back. Protect your HP and earn stars!"
+
+[node name="candle" type="CharacterBody2D" parent="." unique_id=604978668]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="candle" unique_id=1126122241]
+position = Vector2(96, 258)
+scale = Vector2(0.2691406, 0.23554696)
+sprite_frames = SubResource("SpriteFrames_mo30s")
+animation = &"idle"
+script = ExtResource("4_mqdaa")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="candle" unique_id=509928474]
+position = Vector2(97, 240)
+shape = SubResource("CapsuleShape2D_6axd3")
+
+[node name="candle2" type="CharacterBody2D" parent="." unique_id=114302969]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="candle2" unique_id=1206458447]
+position = Vector2(516, 261.00003)
+scale = Vector2(0.2691406, 0.23554696)
+sprite_frames = SubResource("SpriteFrames_mo30s")
+animation = &"idle"
+script = ExtResource("4_mqdaa")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="candle2" unique_id=1128407684]
+position = Vector2(515, 273)
+shape = SubResource("CapsuleShape2D_6axd3")
+
+[node name="Node2D" type="Node2D" parent="." unique_id=1907310962]
+
+[node name="m_wizard" parent="Node2D" unique_id=854120476 instance=ExtResource("5_mo30s")]
+visible = false
+position = Vector2(424, 891)
+scale = Vector2(2.0168822, 2.1993072)
+
+[node name="m_archer" parent="Node2D" unique_id=150782882 instance=ExtResource("6_6axd3")]
+visible = false
+position = Vector2(433.00003, 898)
+scale = Vector2(2.0935292, 2.450003)
+
+[node name="f_wizard" parent="Node2D" unique_id=2014071197 instance=ExtResource("7_qi44v")]
+visible = false
+position = Vector2(413, 921.00006)
+scale = Vector2(2.173528, 2.1093743)
+
+[node name="f_archer" parent="Node2D" unique_id=508012325 instance=ExtResource("8_xftar")]
+visible = false
+position = Vector2(425, 912)
+scale = Vector2(2.1999996, 2.32)
+
+[node name="princess" parent="Node2D" unique_id=1230171912 instance=ExtResource("9_6iio1")]
+visible = false
+position = Vector2(419, 956.99994)
+scale = Vector2(2.3982208, 2.3792481)
+
+[node name="warrior" parent="Node2D" unique_id=1235258956 instance=ExtResource("10_l02f5")]
+position = Vector2(428.00003, 937)
+scale = Vector2(2.2633975, 2.28)
+
+[node name="skip" type="Button" parent="." unique_id=1950060283]
+layout_mode = 0
+offset_left = 429.0
+offset_top = 964.0
+offset_right = 593.0
+offset_bottom = 1024.0
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("StyleBoxFlat_8ehqn")
+text = "Skip"

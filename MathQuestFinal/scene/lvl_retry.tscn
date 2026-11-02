@@ -1,0 +1,111 @@
+[gd_scene format=3 uid="uid://c6xebq11ehger"]
+[ext_resource type="Script" path="res://level_retry.gd" id="level_retry_script"]
+
+[ext_resource type="Texture2D" uid="uid://c7ixifgdrfxo1" path="res://art/background/start level.png" id="1_clqgt"]
+[ext_resource type="Texture2D" uid="uid://cl4hcwmjwkwps" path="res://art/items/scroll.png" id="2_x7bbl"]
+[ext_resource type="FontFile" uid="uid://bbqyr7y7bxs3q" path="res://art/font/para(font)/ParaRegular.woff" id="3_paohg"]
+[ext_resource type="Texture2D" uid="uid://bx3qee1f67hpk" path="res://art/items/hollow star.png" id="4_tv8gp"]
+
+[sub_resource type="SystemFont" id="SystemFont_4ob2m"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pn6sb"]
+bg_color = Color(0.12941177, 0.4117647, 0.6745098, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 6
+border_color = Color(0.007843138, 0.007843138, 0.007843138, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[sub_resource type="SystemFont" id="SystemFont_5oy4b"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nqcnj"]
+bg_color = Color(1, 0.19215687, 0.19215687, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 6
+border_color = Color(0.007843138, 0.007843138, 0.007843138, 1)
+border_blend = true
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[node name="lvl_retry" type="Control" unique_id=73519258]
+script = ExtResource("level_retry_script")
+layout_mode = 3
+anchors_preset = 0
+offset_right = 597.0
+offset_bottom = 1059.0
+
+[node name="background" type="TextureRect" parent="." unique_id=1581296550]
+layout_mode = 0
+offset_right = 607.0
+offset_bottom = 1069.0
+texture = ExtResource("1_clqgt")
+expand_mode = 1
+
+[node name="scroll" type="TextureRect" parent="." unique_id=681131755]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 13.0
+offset_right = 617.0
+offset_bottom = 1081.0
+texture = ExtResource("2_x7bbl")
+
+[node name="Lvl_n" type="Label" parent="." unique_id=2009194018]
+layout_mode = 0
+offset_left = 236.0
+offset_top = 253.0
+offset_right = 386.0
+offset_bottom = 297.0
+theme_override_colors/font_color = Color(0.5004598, 0.22734627, 0.16688377, 1)
+theme_override_fonts/font = ExtResource("3_paohg")
+theme_override_font_sizes/font_size = 41
+text = "Level n"
+
+[node name="hollow_star" type="TextureRect" parent="." unique_id=1881644835]
+layout_mode = 0
+offset_left = 126.0
+offset_top = 305.0
+offset_right = 490.0
+offset_bottom = 578.0
+texture = ExtResource("4_tv8gp")
+
+[node name="play" type="Button" parent="." unique_id=1118064275]
+layout_mode = 0
+offset_left = 231.0
+offset_top = 590.0
+offset_right = 405.0
+offset_bottom = 652.0
+theme_override_fonts/font = SubResource("SystemFont_4ob2m")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("StyleBoxFlat_pn6sb")
+text = "Play"
+
+[node name="play3" type="Button" parent="." unique_id=1305160871]
+layout_mode = 0
+offset_left = 231.0
+offset_top = 590.0
+offset_right = 405.0
+offset_bottom = 652.0
+theme_override_fonts/font = SubResource("SystemFont_4ob2m")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("StyleBoxFlat_pn6sb")
+text = "Retry"
+
+[node name="back" type="Button" parent="." unique_id=838557841]
+layout_mode = 0
+offset_left = 229.0
+offset_top = 682.0
+offset_right = 408.0
+offset_bottom = 743.0
+theme_override_fonts/font = SubResource("SystemFont_5oy4b")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("StyleBoxFlat_nqcnj")
+text = "Back
+"

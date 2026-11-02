@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://c5cpqcx2kngrn"
+valid=false
+
+[deps]
+
+source_file="res://Grade_3_MathQuest_Group_Report.csv"
+
+[params]
+
+compress=1
+delimiter=0
+unescape_keys=false
+unescape_translations=true

@@ -1,0 +1,8 @@
+res://teacher_dashboard.gd
+res://scene/login.tscn
+res://teacher_generate.gd
+res://script/data/player_data.gd
+res://script/login.gd
+res://art/player/teacher/gen.tscn
+res://art/player/teacher/monitor.tscn
+res://teacher_monitor.gd
