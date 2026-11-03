@@ -1,5 +1,4 @@
 [gd_scene format=3 uid="uid://ckp1hp1j5782m"]
-[ext_resource type="Script" path="res://script/select_level.gd" id="select_level_script"]
 
 [ext_resource type="Texture2D" uid="uid://dq4yvkfjx1xvq" path="res://art/background/scoreboard_select_lvl.png" id="1_55kyr"]
 [ext_resource type="FontFile" uid="uid://bbqyr7y7bxs3q" path="res://art/font/para(font)/ParaRegular.woff" id="2_8ehqn"]
@@ -18,6 +17,7 @@
 [ext_resource type="PackedScene" uid="uid://cxmf0vn2hfwvq" path="res://scene/char/warrior.tscn" id="13_20ck4"]
 [ext_resource type="Texture2D" uid="uid://d3tso7xhy3id8" path="res://art/items/lock.png" id="16_sag14"]
 [ext_resource type="Texture2D" uid="uid://b4vk0lugrmlsg" path="res://art/items/unlock.png" id="17_tvcej"]
+[ext_resource type="Script" uid="uid://c2lucjd68bieu" path="res://script/select_level.gd" id="select_level_script"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4ob2m"]
 bg_color = Color(0.45654154, 0.0035845859, 0.9641804, 1)
@@ -662,11 +662,11 @@ animations = [{
 radius = 71.94356
 
 [node name="select_level" type="Control" unique_id=1216066593]
-script = ExtResource("select_level_script")
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
+script = ExtResource("select_level_script")
 
 [node name="background2" type="TextureRect" parent="." unique_id=335281015]
 layout_mode = 0
